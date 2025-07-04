@@ -34,4 +34,4 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
-        images: ${{ secrets.AZURE_CONTAINER_REGISTRY }}/hello-flask:${{ github.sha }}
+        images: ${{ secrets.AZURE_CONTAINER_REGISTRY_WEBAPP }}/hello-flask:${{ github.sha }}
